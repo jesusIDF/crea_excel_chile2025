@@ -178,7 +178,7 @@ print("✓ Columnas ACES y vlookup para TransmissionControlTypeName creadas")
 # Copiar la primera linea de IDF_Chile_2025
 # Cargar libros
 #wb_base = load_workbook(archivo_base)
-wb_base_chile = load_workbook('../exceles/IDF_Chile_Chevrolet_2025_06_11.xlsx')
+wb_base_chile = load_workbook('../../exceles/IDF_Chile_Chevrolet_2025_06_11.xlsx')
 
 # Seleccionar la primera hoja de cada libro
 hoja_destino = wb_base.active
