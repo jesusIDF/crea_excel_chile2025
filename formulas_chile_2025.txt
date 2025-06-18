@@ -1,0 +1,56 @@
+# formulas template Chile
+# F - Marca ACES
+=ESPACIOS(E3)
+
+# G - VLOOKUP Make
+=SI.ERROR(BUSCARV(F3,Make!B:B,1,0), -1)
+
+# I - Modelo ACES
+=ESPACIOS(H3)
+
+# J - VLOOKUP Model
+=SI.ERROR(BUSCARV(I3,Model!B:B,1,0), -1)
+
+# M - VLOOKUP V TypeName
+=SI.ERROR(BUSCARV(L3,'Vehi Base'!J:J,1,FALSO), -1)
+
+# P - VLOOKUP V TypeGroup
+=SI.ERROR(BUSCARV(O3,'Vehicle Type Grp'!B:B,1,0), -1)
+
+# S - VLOOKUP SubModelName
+=SI.ERROR(BUSCARV(R3,Submodel!B:B,1,FALSO), -1)
+
+# AB - VLOOKUP BodyNumDoors
+=SI.ERROR(BUSCARV(VALOR(AA3),'V to Body'!E:E,1,0), -1)
+=SI.ERROR(BUSCARV(TEXTO(AA3,"0"),'V to Body'!E:E,1,0), -1)
+
+# AE - VLOOKUP BodyTypeName
+=SI.ERROR(BUSCARV(AD3,Body!B:B,1,0), -1)
+
+# AH - VLOOKUP DriveTypeName  error
+=SI.ERROR(BUSCARV(VALOR(AG3),Drive!B:B,1,0), -1)
+=SI.ERROR(BUSCARV(AG3,Drive!B:B,1,0), -1)
+
+# AV - VLOOKUP Liter
+=SI.ERROR(BUSCARV(VALOR(AU3),'V To Engine'!H:H,1,0), -1)
+=SI.ERROR(BUSCARV(TEXTO(AU3,"0.0"),'V To Engine'!H:H,1,0), -1)
+
+# BQ - FuelTypeName ACES
+=ESPACIOS(MAYUSC(BP3))
+
+# BR - VLOOKUP FuelTN
+=SI.ERROR(BUSCARV(VALOR(BQ3),Fuel!B:B,1,0), -1)
+=SI.ERROR(BUSCARV(BQ3,Fuel!B:B,1,0), -1)
+
+# CC - VLOOKUP TNumSpeeds
+=SI.ERROR(BUSCARV(VALOR(CB3),'V To Transmission'!E:E,1,0), -1)
+=SI.ERROR(BUSCARV(TEXTO(CB3,"0"),'V To Transmission'!E:E,1,0), -1)
+
+# CF - VLOOKUP TransmissionControlTypeName
+=SI.ERROR(BUSCARV(CE3,'V To Transmission'!D:D,1,FALSO), -1)
+=SI.ERROR(BUSCARV(TEXTO(CH3,"0"),'V To Transmission'!E:E,1,FALSO), -1)
+=SI.ERROR(BUSCARV(CE3,'V To Transmission'!D:D,1,0), -1)
+
+
+
+
